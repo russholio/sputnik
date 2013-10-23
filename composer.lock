@@ -1,0 +1,201 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "7a54747534993501bca4a37cf3b3a661",
+    "packages": [
+        {
+            "name": "devco/model",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devco/Model.git",
+                "reference": "8428845650e2f84f66e97162c25ec0e3eb743cc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devco/Model/zipball/8428845650e2f84f66e97162c25ec0e3eb743cc6",
+                "reference": "8428845650e2f84f66e97162c25ec0e3eb743cc6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "treshugart/testes": "1.0.x-dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Model": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Trey Shugart",
+                    "email": "treshugart@gmail.com",
+                    "homepage": "http://iamtres.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Model is a simple, lightweight and easy-to-use Domain Driven Entity framework.",
+            "homepage": "http://github.com/treshugart/Model",
+            "keywords": [
+                "ddd",
+                "design",
+                "domain",
+                "driven",
+                "entities",
+                "entity",
+                "model",
+                "object",
+                "repositories",
+                "repository",
+                "value"
+            ],
+            "time": "2013-09-13 00:57:52"
+        },
+        {
+            "name": "devco/sputnik-job-description",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "/home/rholman/sputnik-job-description",
+                "reference": "9f6b3010bde74c896955cfa082448a6a9d2dffec"
+            },
+            "require": {
+                "devco/model": "1.0.x-dev",
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "sputnik": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Russell Holman",
+                    "email": "russholio@gmail.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "The definition of a job as passed to sputnik.",
+            "time": "2013-10-23 03:11:37"
+        },
+        {
+            "name": "e2ex/e2ex",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/freddiefrantzen/e2ex.git",
+                "reference": "7b46f7b58300e71c1ad3a96955401034ce782a48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/freddiefrantzen/e2ex/zipball/7b46f7b58300e71c1ad3a96955401034ce782a48",
+                "reference": "7b46f7b58300e71c1ad3a96955401034ce782a48",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.6"
+            },
+            "require-dev": {
+                "monolog/monolog": "1.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "E2EX": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freddie Frantzen",
+                    "email": "freddie@freddiefrantzen.com",
+                    "homepage": "http://www.freddiefrantzen.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Converts PHP Errors to Exceptions and (optionally) logs PHP Errors, Notices and Warnings with a PSR-3 compatible logger",
+            "homepage": "http://github.com/freddiefrantzen/e2ex",
+            "keywords": [
+                "error",
+                "error handler",
+                "errorexception",
+                "exception",
+                "log",
+                "logging",
+                "php"
+            ],
+            "time": "2013-03-14 02:40:32"
+        },
+        {
+            "name": "russholio/device-sync",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "/home/rholman/device-sync",
+                "reference": "5b522b407b4d21d2d606cb0314fa4da73e4c8342"
+            },
+            "require": {
+                "devco/model": "1.0.x-dev",
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "device-sync": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Russell Holman",
+                    "email": "russholio@gmail.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "The job that performs device sync.",
+            "time": "2013-10-23 04:40:53"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "e2ex/e2ex": 20,
+        "devco/sputnik-job-description": 20,
+        "devco/model": 20,
+        "russholio/device-sync": 20
+    },
+    "platform": {
+        "php": ">=5.5.0"
+    },
+    "platform-dev": [
+
+    ]
+}

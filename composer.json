@@ -1,0 +1,36 @@
+{
+    "name": "devco/jigsaw",
+    "description": "A job queue worker designed to accept a generic job on a remote server and fire the specific job.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Russell Holman",
+            "email": "russholio@gmail.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "sputnik": "src"
+        }
+    },
+
+    "repositories": [
+        {
+            "type":"vcs",
+            "url": "/home/rholman/sputnik-job-description"
+        },
+        {
+            "type":"vcs",
+            "url": "/home/rholman/device-sync"
+        }
+    ],
+
+    "require":{
+        "php": ">=5.5.0",
+        "e2ex/e2ex": "0.8.*@dev",
+        "devco/sputnik-job-description":"dev-master",
+        "devco/model":"@dev",
+        "russholio/device-sync": "dev-master"
+    }
+}

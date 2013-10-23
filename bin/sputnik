@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+SPUTNIK_PATH=/home/rholman/sputnik/src/sputnik/worker.php
+
+php $SPUTNIK_PATH

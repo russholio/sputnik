@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+BIN_FILE=sputnik
+BIN_PATH=bin
+
+INSTALL_PATH=`pwd`
+if [ -n "$1" ]; then
+    INSTALL_PATH=$1
+fi
+
+INSTALL_PATH=${INSTALL_PATH/%\//}
+
+WORKER_PATH=`find . -name 'worker.php'`
+WORKER_PATH=${WORKER_PATH:2}
+
+mkdir -p bin
+
+cat > $BIN_PATH/$BIN_FILE <<EOF
+#!/usr/bin/env bash
+SPUTNIK_PATH=$INSTALL_PATH/$WORKER_PATH
+
+php \$SPUTNIK_PATH
+EOF
+
+chmod 744 $BIN_PATH/$BIN_FILE
